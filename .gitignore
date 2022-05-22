@@ -1,0 +1,7 @@
+/text
+/sand
+/my_test
+*.pyc
+django_sheets/.env
+
+
