@@ -34,8 +34,3 @@ def get_all_values():
     price_usd_values = tuple(values['values'][2])
     delivery_time_values = tuple(values['values'][3])
     return order_number_values, price_usd_values, delivery_time_values
-
-
-# currency_rub = get_currency_rub()
-#    dict_values['price_usd'] = int(price_usd_values[i])
-#    dict_values['price_rub'] = round(int(price_usd_values[i])*currency_rub, 2)
