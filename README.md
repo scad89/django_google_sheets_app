@@ -76,6 +76,7 @@ xmltodict
 http://127.0.0.1:8000 - страница приложения
 http://127.0.0.1:5555 - flower для мониторинга процесса выполнения задач добавления данных из таблицы в базу данных
 
+```
 
 ## Установка и запуск(docker-compose):
 
@@ -107,11 +108,31 @@ http://127.0.0.1:5555 - flower для мониторинга процесса в
 
 ```
 
+```
+
 - http://0.0.0.0:8000 - страница приложения
 - http://0.0.0.0:5555 - flower
 
+```
 
 ### Описание реализации:
 
+Приложение один раз в минуту получает данны из таблицы Goodle Sheet, где имеются колонки в виде №заказа, цена в $ срок поставки.
+После приложение получает курс рубля на текующую дату и добавляет ещё и цену в рос. рубля. Затем все эти данные записываются в базу данных.
+Если пользователю необходимо ознакомиться с актуальными данными из таблицы Google Sheet, он открывает страницу приложения, где они выводятся в следующем виде:
+![](https://github.com/scad89/django_google_sheets_app/blob/main/image/browser.jpg)
 
-```
+Обновления актуальных данных из таблицы Google Sheet происходит один раз в минуту:
+![](https://github.com/scad89/django_google_sheets_app/blob/main/image/flower_count.jpg)
+![](https://github.com/scad89/django_google_sheets_app/blob/main/image/flower.jpg)
+
+Ссылка на мой Google Sheets:
+[Googe Sheets](https://docs.google.com/spreadsheets/d/1LrFj3Q8E_rcNCI3hGAA7qXm31mNQO8tJli7ThE8SuNg/edit#gid=0)
+
+## Contacts
+
+- Instagram: [@igor*komkov*](https://www.instagram.com/igor_komkov_/)
+- Vk.com: [Igor Komkov](https://vk.com/zzzscadzzz)
+- Linkedin: [Igor Komkov](https://www.linkedin.com/in/igor-komkov/)
+- email: **scad200@gmail.com**
+- Telegram: **@zzzSCADzzz**
