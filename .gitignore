@@ -3,5 +3,6 @@
 /my_test
 *.pyc
 django_sheets/.env
+django_sheets/main/services/creds.json
 
 
