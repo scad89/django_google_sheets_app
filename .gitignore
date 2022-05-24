@@ -3,7 +3,8 @@
 /my_test
 *.pyc
 django_sheets/.env
+django_sheets/.env_docker
 django_sheets/celerybeat-schedule
-django_sheets/main/services/creds.json
+
 
 
