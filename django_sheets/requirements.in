@@ -23,6 +23,7 @@ requests
 rsa
 six 
 uritemplate
+xmltodict
 
 
 
