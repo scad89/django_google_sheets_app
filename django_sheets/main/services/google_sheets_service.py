@@ -13,7 +13,7 @@ load_dotenv()
 def get_values_from_sheet():
     basedir = os.path.abspath(os.path.dirname(__file__))
     CREDENTIALS_FILE = basedir+'/creds.json'
-    spreadsheet_id = os.environ.get('SHEET_ID')
+    spreadsheet_id = "1LrFj3Q8E_rcNCI3hGAA7qXm31mNQO8tJli7ThE8SuNg"
     credentials = ServiceAccountCredentials.from_json_keyfile_name(
         CREDENTIALS_FILE,
         ['https://www.googleapis.com/auth/spreadsheets',
