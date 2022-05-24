@@ -27,31 +27,19 @@
                 <th>срок поставки</th>
               </tr>
             </thead>
+            {% for i in data %}
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>fdsfsd</td>
+                <th scope="row">{{ i.id }}</th>
+                <td>{{ i.order_number }}</td>
+                <td>{{ i.price_usd }} </td>
+                <td>{{ i.price_rub }}</td>
+                <td>{{ i.delivery_time }}</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
+              {% endfor %}
             </tbody>
           </table>
           {% endblock  %}
-
     </main>
-    
 </body>
 </html>

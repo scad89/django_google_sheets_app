@@ -1,7 +1,9 @@
 sqlparse
 cachetools
+celery
 Django
 flake8
+flower
 google-api-python-client
 google-auth
 google-auth-httplib2
@@ -18,7 +20,8 @@ python-dateutil
 python-dotenv
 pyasn1
 pyasn1-modules
-pycodestyle 
+pycodestyle
+redis
 requests 
 rsa
 six 

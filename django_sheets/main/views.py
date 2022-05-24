@@ -3,18 +3,14 @@ from .models import GoogleSheet
 from django.views.generic import View
 from main.services.google_sheets_service import get_all_values
 from main.services.requests_service import get_currency_rub
+from django.db.models import Sum
 
 
 class MainView(View):
     def get(self, request):
-        order_number_values, price_usd_values, delivery_time_values = get_all_values()
-        currency = get_currency_rub()
+        all_data_from_db = GoogleSheet.objects.all()
         return render(request, 'main/main.html',
-                      # {
-                      #     'order_number': order_number_values,
-                      #     'price_usd': price_usd_values,
-                      #     'price_rub': currency,
-                      #     'delivery_time': delivery_time_values,
-                      #     'length_of_range': len(order_number_values)
-                      # }
+                      {
+                          'data': all_data_from_db,
+                      }
                       )
